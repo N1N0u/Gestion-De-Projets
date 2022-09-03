@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Inscription</title>
+<link href="css/Acceuil.css" rel="stylesheet" type="text/css">
+</head>
+<style>
+h1{
+	text-align: center;
+}
+.ins{
+	down:50%;
+	top:50%;
+	right:50%;
+	left:50%;
+	align-content:center
+	}
+</style>
+<script language="javascript">
+function verifiermail() {
+	$mail=document.ins.email.value;
+      if (($mail.indexOf("@") >= 0) && ($mail.indexOf(".") >= 0)) 
+	  {
+         return true; 
+      } else 
+	  {
+         alert("Mail invalide !");
+         return false;
+      }
+   }
+function check()
+{	
+var a,b,c,d,e;
+a=document.ins.nom.value;
+b=document.ins.prenom.value;
+c=document.ins.adress.value;
+d=document.ins.email.value;
+e=document.ins.password.value;
+	if(a=="" || b=="" || c=="" || d=="" || e=="")
+	{
+		alert("Veuillez remplir tous les champs");
+		return false;
+	}
+	else return true;
+}
+function fn()
+{
+a=check(); 
+b=verifiermail();
+if(a==true && b==true) return true;
+else return false;
+}
+</script>
+<body>
+<div class="top"> 
+</div>
+   
+  <!--
+  Voici le contenu principal
+  -->
+<div class="main">
+<h1>Bienvenu</h1>
+<div id="foo">
+<h4>Veuillez remplir tous les champs svp</h4>
+<form action="php/inscription.php" method="get" name="ins" onSubmit="return fn()">
+<p class="police">Nom:  <input type="text" name="nom" style="margin-left:25px"/></p><br>
+<p class="police">Prenom:  <input type="text" name="prenom" style="margin-left:10px"/></p><br>
+<p class="police">Adress:  <input type="text" name="adress" style="margin-left:20px"/></p><br>
+<p class="police">Email:  <input type="email" name="email" style="margin-left:25px"/></p><br>
+<p class="police">Password:  <input type="password" name="password"/><br>
+<input type="submit" value="Sinscrire" style="margin-left:300px"/>
+</form>
+</div>
+  </div>
+<!--Les images -->
+  
+
+  <!--Footer-->
+  <div class="down">
+    ©    Copyright Univeristy of Oum el Bouaghi.
+  </div>
+</body>
+</html>

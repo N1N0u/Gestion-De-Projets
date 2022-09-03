@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* CSS Document */
+.top{
+	position:absolute;
+	background-image: url(../img/top.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	width:100%;
+	top:0;
+	left:0;
+	right:0;
+	bottom:85%;
+	border: solid;
+}
+.top1{
+	position:absolute;
+	background-color:grey;
+	width:100%;
+	left:0;
+	right:0;
+	top:15%;
+	bottom:75%;
+	border: solid;
+}
+
+.d2{
+	position:absolute;
+	top:15%;
+	bottom:85%;
+	right:0px;
+}
+.main{
+	border: solid;
+	position: fixed;
+	top:25%;
+	bottom:5%;
+	left:0;
+	right:0;
+	width:100%;
+}
+.menu{
+	position:fixed;
+	border:solid;
+	top:25%;
+	bottom:5%;
+	left: 0%;
+	right:80%;
+}
+.menu ul li{
+	color:blue;
+}
+.work{
+	position:fixed;
+	border:solid;
+	top:25%;
+	bottom:5%;
+	left: 20%;
+	right:0%;
+}
+.down{
+	top:95%;
+	position:fixed;
+	left: 70%;
+}
